@@ -1,0 +1,23 @@
+{
+  "name": "MongoDB-API",
+  "version": "1.0.0",
+  "description": "Creating my own api using MongoDB, Express, and NodeJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ABarranco95/MongoDB-API.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ABarranco95/MongoDB-API/issues"
+  },
+  "homepage": "https://github.com/ABarranco95/MongoDB-API#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
