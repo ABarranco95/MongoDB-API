@@ -1,16 +1,26 @@
+require('dotenv').config();
+const mongoose = require('mongoose');
 const express = require('express')
 
 const app = express();
 
 
+// Connect to database
+mongoose.connect(process.env.DB_CONNECTION, { useNewUrlParser: true }, () => 
+    console.log('Connected to our database!')
+);
+
+
+// Import Routes
+const postsRoute = require('./controllers/posts');
+
+app.use('/posts', postsRoute);
+
+
+
 // Routes
 app.get('/', (req, res) => {
     res.send('We are home!')
-});
-
-
-app.get('/posts', (req, res) => {
-    res.send('We are on posts!')
 });
 
 
